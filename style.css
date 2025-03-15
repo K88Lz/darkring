@@ -148,6 +148,6 @@ footer {
 }
 
 /* Apply animation to content */
-#features, #contact {
+#features, #contact, #privacy-policy, #terms-of-service {
     animation: slideIn 1s ease-in-out;
 }
