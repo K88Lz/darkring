@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,45 +6,47 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #2C2F33;
     color: #fff;
+    line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* Header */
 header {
-    background-color: #7289da;
-    padding: 40px 0;
+    background: linear-gradient(to right, #7289da, #6a7cfc);
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .button {
     background-color: #f4a261;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
+    font-size: 1.2rem;
     border-radius: 5px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
     background-color: #e76f51;
+    transform: scale(1.05);
 }
 
+/* Features Section */
 #features {
     padding: 40px 0;
     background-color: #36393f;
@@ -52,18 +55,44 @@ header p {
 #features h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-#features ul {
-    list-style-type: none;
-    text-align: center;
+.accordion {
+    width: 80%;
+    margin: 0 auto;
 }
 
-#features li {
+.accordion-item {
+    background-color: #4e5b78;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion-button {
+    background-color: #7289da;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
     font-size: 1.2rem;
-    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.accordion-button:hover {
+    background-color: #5f73a1;
+}
+
+.accordion-content {
+    padding: 10px 20px;
+    background-color: #2f3136;
+    display: none;
+}
+
+/* Contact Section */
 #contact {
     padding: 40px 0;
 }
@@ -76,7 +105,7 @@ header p {
 
 #contact input, #contact textarea {
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     width: 80%;
     max-width: 400px;
     font-size: 1rem;
@@ -85,7 +114,7 @@ header p {
 }
 
 #contact button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #7289da;
     color: white;
     font-size: 1.1rem;
@@ -96,11 +125,29 @@ header p {
 }
 
 #contact button:hover {
-    background-color: #4e5b78;
+    background-color: #5f73a1;
 }
 
+/* Footer */
 footer {
     background-color: #23272a;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to content */
+#features, #contact {
+    animation: slideIn 1s ease-in-out;
 }
