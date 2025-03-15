@@ -1,2 +1,2 @@
 # darkring.github.io
-My website for ad
+https://tuzakunderground.github.io/darkring/
