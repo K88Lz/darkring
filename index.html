@@ -3,93 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Botu - Dark Ring</title>
+    <title>Dark Ring - Discord Botu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Dark Ring</h1>
-            <p>Discord botumuzu keşfedin, özelliklerine göz atın!</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=1349371506966270004&permissions=35184408788992&integration_type=0&scope=bot" class="button">Botu Davet Et</a>
+            <h1 class="hero-title">Dark Ring</h1>
+            <p class="hero-subtitle">Güçlü ve Ücretsiz Discord Botunuz</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1349371506966270004&permissions=35184408788992&integration_type=0&scope=bot" class="btn btn-primary">Botu Davet Et</a>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features">
-        <div class="container">
-            <h2>Özellikler</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-button">Youtube'dan şarkılar dinleyebilirsiniz.</button>
-                    <div class="accordion-content">
-                        <p>Çoğu bot bu özelliğe sahip değil ama bizde var!</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button">Tamamen ücretsiz</button>
-                    <div class="accordion-content">
-                        <p>Evet yanlış duymadınız. Bedava hizmet veriyoruz!</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button">Güçlü ve iyi ses kalitesi</button>
-                    <div class="accordion-content">
-                        <p>Deneyerek öğrenebilirsiniz :)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Privacy Policy Section -->
-    <section id="privacy-policy">
-        <div class="container">
-            <h2>Gizlilik Politikası</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-button">Gizlilik Politikası</button>
-                    <div class="accordion-content">
-                        <p>Dark Ring botu, kullanıcıların verilerini yalnızca bot hizmetlerini sağlamak amacıyla toplar. Kullanıcı verileri üçüncü şahıslarla paylaşılmaz ve sadece bot hizmetinin sağlanabilmesi için gereklidir.</p>
-                    </div>
+    <main>
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">Özellikler</h2>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary class="accordion-title">YouTube Müzik Çalma</summary>
+                        <div class="accordion-content">
+                            <p>Rakiplerden farklı olarak YouTube'dan kesintisiz müzik keyfi sunuyoruz.</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-title">Tamamen Ücretsiz</summary>
+                        <div class="accordion-content">
+                            <p>Premium özellikler için ücret talep etmiyoruz - her şey bedava!</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-title">Yüksek Ses Kalitesi</summary>
+                        <div class="accordion-content">
+                            <p>Kristal netliğinde ses deneyimi - test et ve gör!</p>
+                        </div>
+                    </details>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Terms of Service Section -->
-    <section id="terms-of-service">
-        <div class="container">
-            <h2>Hizmet Şartları</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-button">Hizmet Şartları</button>
+        <section id="privacy" class="section">
+            <div class="container">
+                <h2 class="section-title">Gizlilik Politikası</h2>
+                <details class="accordion-item">
+                    <summary class="accordion-title">Veri Kullanımı</summary>
                     <div class="accordion-content">
-                        <p>Dark Ring botu, sadece Discord platformu üzerinde çalışır. Botun kötüye kullanımından, şiddetli dil kullanılmasından veya Discord'un kurallarına aykırı bir davranıştan sorumlu tutulamaz.</p>
+                        <p>Dark Ring, sadece hizmet sağlamak için gerekli verileri toplar ve asla üçüncü taraflarla paylaşmaz.</p>
                     </div>
-                </div>
+                </details>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>İletişim</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Adınız" required>
-                <input type="email" name="email" placeholder="E-posta" required>
-                <textarea name="message" placeholder="Mesajınızı yazın..." required></textarea>
-                <button type="submit">Gönder</button>
-            </form>
-        </div>
-    </section>
+        <section id="terms" class="section">
+            <div class="container">
+                <h2 class="section-title">Hizmet Şartları</h2>
+                <details class="accordion-item">
+                    <summary class="accordion-title">Kullanım Koşulları</summary>
+                    <div class="accordion-content">
+                        <p>Bot, yalnızca Discord kurallarına uygun şekilde kullanılmalıdır. Kötüye kullanım sorumluluğu kullanıcıya aittir.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Bize Ulaşın</h2>
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Adınız" required class="form-input">
+                    <input type="email" name="email" placeholder="E-posta Adresiniz" required class="form-input">
+                    <textarea name="message" placeholder="Mesajınız" required class="form-input"></textarea>
+                    <button type="submit" class="btn btn-secondary">Mesaj Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Dark Ring. Tüm hakları saklıdır.</p>
+            <p>&copy; 2025 Dark Ring - Tüm Hakları Saklıdır</p>
         </div>
     </footer>
 
