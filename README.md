@@ -1,2 +1,2 @@
 # darkring.github.io
-https://tuzakunderground.github.io/darkring/
+https://K88Lz.github.io/darkring/
